@@ -1,0 +1,80 @@
+    @font-face {
+      font-family: "PressStart";
+      src:url(../fonts/ProstoOne-Regular.ttf);
+      font-style: normal;
+      font-weight: normal;
+    }
+    
+      body{
+        background:url(../img/coffee.png)
+      }
+      
+      .container.rounded{
+        background: rgb(139, 69, 19, .8);
+      }
+      
+      .coffee-btn-group{
+        width:90%;
+        height:70px;
+        background: #BC8F8F;
+        border-radius: 35px 0 0 35px;
+        font-size:2em;
+        font-weight: 700;
+        color: white;
+        font-family: 'Podkova', serif;
+        border: 1px solid #F5DEB3;
+      }
+      
+      .coffee-btn{
+        width:70px;
+        height:70px;
+        background:brown;
+        cursor: pointer;
+        border: 2px solid #AF5A5A;
+      }
+      
+      .coffee-btn:hover{
+        background: #800000;
+      }
+      
+      .coffee-btn:active{
+        background:red;
+        box-shadow:inset 1px 1px 5px black;
+      }
+      
+      #display{
+        width: 100%;
+        height: 150px;
+        background: navy;
+        color: white;
+        border: 4px;
+        font-size:1em;
+        font-family: "PressStart";
+      }
+      #changeBox{
+        width:95%;
+        height:200px;
+        border: 4px solid black;
+        background: #DB7093;
+        position: relative;
+      }
+      img[src$='coin.png']{
+        cursor:pointer;
+        width:60px;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+      img[src$='coin.png']:hover{
+        filter: contrast(150%);
+      }
+      #coffeeMug:hover{
+        cursor:pointer;
+        filter: contrast(150%);
+      }
+      #blocker{
+        top:0;
+        position:absolute;
+        width:100%;
+        z-index:100;
+      }
